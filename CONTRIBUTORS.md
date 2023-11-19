@@ -8,6 +8,7 @@ video tutorials.
  - Bobyshev Alexander
  - Laurent Aphecetche
  - Matt Arsenault
+ - Takuro Ashie
  - ashishgamedev
  - David Avedissian
  - Luca Bacci
@@ -33,6 +34,7 @@ video tutorials.
  - Arturo Castro
  - Chi-kwan Chan
  - TheChocolateOre
+ - Ali Chraghi
  - Joseph Chua
  - Ian Clarkson
  - Michał Cichoń
@@ -81,7 +83,9 @@ video tutorials.
  - Stephen Gutekanst
  - Jonathan Hale
  - hdf89shfdfs
+ - Moritz Heinemann
  - Sylvain Hellegouarch
+ - Björn Hempel
  - Matthew Henry
  - heromyth
  - Lucas Hinderberger
@@ -125,6 +129,7 @@ video tutorials.
  - lukect
  - Tristam MacDonald
  - Hans Mackowiak
+ - Ramiro Magno
  - Дмитри Малышев
  - Zbigniew Mandziejewicz
  - Adam Marcus
@@ -137,6 +142,7 @@ video tutorials.
  - Marcel Metz
  - Liam Middlebrook
  - Ave Milia
+ - Icyllis Milica
  - Jonathan Miller
  - Kenneth Miller
  - Bruce Mitchener
@@ -165,6 +171,7 @@ video tutorials.
  - Peoro
  - Braden Pellett
  - Christopher Pelloux
+ - Michael Pennington
  - Arturo J. Pérez
  - Vladimir Perminov
  - Olivier Perret
@@ -183,9 +190,12 @@ video tutorials.
  - pthom
  - Martin Pulec
  - Guillaume Racicot
+ - Juan Ramos
+ - Christian Rauch
  - Philip Rideout
  - Eddie Ringle
  - Max Risuhin
+ - Joe Roback
  - Jorge Rodriguez
  - Jari Ronkainen
  - Luca Rood
@@ -193,6 +203,7 @@ video tutorials.
  - Aleksey Rybalkin
  - Mikko Rytkönen
  - Riku Salminen
+ - Yoshinori Sano
  - Brandon Schaefer
  - Sebastian Schuberth
  - Christian Sdunek
@@ -204,6 +215,7 @@ video tutorials.
  - Dmitri Shuralyov
  - Joao da Silva
  - Daniel Sieger
+ - Michael Skec
  - Daniel Skorupski
  - Slemmie
  - Anthony Smith
@@ -238,7 +250,9 @@ video tutorials.
  - Corentin Wallez
  - Torsten Walluhn
  - Patrick Walton
+ - Jim Wang
  - Xo Wang
+ - Andre Weissflog
  - Jay Weisskopf
  - Frank Wille
  - Andy Williams

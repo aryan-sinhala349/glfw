@@ -29,6 +29,8 @@
 
 #include "internal.h"
 
+#if defined(GLFW_BUILD_LINUX_JOYSTICK)
+
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/inotify.h>
@@ -157,7 +159,7 @@ static GLFWbool openJoystickDevice(const char* path)
     }
 
     // Ensure this device supports the events expected of a joystick
-    if (!isBitSet(EV_KEY, evBits) || !isBitSet(EV_ABS, evBits))
+    if (!isBitSet(EV_ABS, evBits))
     {
         close(linjs.fd);
         return GLFW_FALSE;
@@ -324,7 +326,8 @@ GLFWbool _glfwInitJoysticksLinux(void)
 
     // Continue without device connection notifications if inotify fails
 
-    if (regcomp(&_glfw.linjs.regex, "^event[0-9]\\+$", 0) != 0)
+    _glfw.linjs.regexCompiled = (regcomp(&_glfw.linjs.regex, "^event[0-9]\\+$", 0) == 0);
+    if (!_glfw.linjs.regexCompiled)
     {
         _glfwInputError(GLFW_PLATFORM_ERROR, "Linux: Failed to compile regex");
         return GLFW_FALSE;
@@ -376,8 +379,10 @@ void _glfwTerminateJoysticksLinux(void)
             inotify_rm_watch(_glfw.linjs.inotify, _glfw.linjs.watch);
 
         close(_glfw.linjs.inotify);
-        regfree(&_glfw.linjs.regex);
     }
+
+    if (_glfw.linjs.regexCompiled)
+        regfree(&_glfw.linjs.regex);
 }
 
 GLFWbool _glfwPollJoystickLinux(_GLFWjoystick* js, int mode)
@@ -428,4 +433,6 @@ const char* _glfwGetMappingNameLinux(void)
 void _glfwUpdateGamepadGUIDLinux(char* guid)
 {
 }
+
+#endif // GLFW_BUILD_LINUX_JOYSTICK
 
